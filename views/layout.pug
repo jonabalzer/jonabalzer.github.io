@@ -1,0 +1,48 @@
+include nav
+doctype
+html(itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#" lang="en-US")
+  head
+    title Jonathan Balzer
+    
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="mobile-web-app-capable" content="yes")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="author" content="Jonathan Balzer")
+    //meta(name="description" content="Hochzeitsseite von Ulf und Silvi")
+    //meta(itemprop="name" content="Ulf und Silvi - Wir heiraten")
+    //meta(itemprop="description" content="Ulf und Silvi - Wir heiraten")
+    //meta(itemprop="image" content="http://www.silvi-und-ulf.de/imgs/logo-large.png")
+    //meta(property="og:title" content="Ulf und Silvi - Wir heiraten")
+    //meta(property="og:type" content="website")
+    //meta(property="og:url" content="http://www.silvi-und-ulf.de")
+    //meta(property="og:image" content="http://www.silvi-und-ulf.de/imgs/logo-large.png")
+    //meta(property="og:image:width" content="960")
+    //meta(property="og:image:height" content="960")
+    //meta(property="og:description" content="Ulf und Silvi - Wir heiraten")
+    //meta(property="og:locale" content="de_DE")
+    
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")
+    link(href="public/css/main.css", rel="stylesheet")
+    
+  body
+    #main
+      #header-img
+        span Jonathan Balzer
+      +create-app-menu()
+        +add-main-entry-simple('About Me', 'index.html')
+        //+add-main-entry-simple('Projects', 'projects.html')
+        //+add-main-entry('Data')
+        //+add-main-entry-simple('Teaching', 'teaching.html')
+    
+      .row
+        .col-sm-3
+        .col-xs-12.col-sm-6
+          #content
+            block content
+        .col-sm-3
+      
+      #footer
+      
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")

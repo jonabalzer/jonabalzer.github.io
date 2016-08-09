@@ -1,5 +1,5 @@
 mixin create-app-menu()
-  .navbar.navbar-default(role="navigation")
+  .navbar.navbar-default
     .container
       .navbar-header
         button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#main-menu-collapsed", aria-expanded="false", aria-controls="navbar")
@@ -12,21 +12,15 @@ mixin create-app-menu()
           block
           
 mixin add-main-entry-simple(name, url)
-  li.menu-item
-    a.dropdown-toggle(href!=url)!=name
+  li
+    a(href!=url)!=name
   
-
 mixin add-main-entry(name)
   li.dropdown.menu-item
     a.dropdown-toggle(href="#" data-toggle="dropdown")!=name
     ul.dropdown-menu
       block
-    
-mixin add-entries(...items)
-  each item in items 
-    li.menu-item 
-      a(href="#" data-toggle="modal" data-target='#'+item.id)!=item.text
-      
+          
 mixin add-simple-links(...items)
   each item in items 
     li.menu-item 

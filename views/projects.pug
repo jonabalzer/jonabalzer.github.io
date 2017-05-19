@@ -2,9 +2,10 @@ extend layout
 block content
   h1 Projects
   h2 Virtual Reality
-  p vnorama offers fully immersive playback of VR video, including 3D rendering and 180° or 360° field of view. Help us by joining the public beta test on Google Play.
+  //iframe(src="http://bcme.vathos.net" frameborder="0" scrolling="no" allowfullscreen)
+  p vnorama offers fully immersive playback of VR video, including 3D rendering and 180° or 360° field of view. Help us by joining the static beta test on Google Play.
   a(href="https://www.vnorama.com" target="_blank")
-    img.img-responsive(src='public/imgs/deviceart.png')
+    img.img-responsive(src='static/imgs/deviceart.png')
   h2 Virtual Try-On
   p This  is the screen capture of a demo that I put together for a client of Vathos. I am real, the glasses are fake. The input data consist of a polygonal mesh model of my head and a stream of RGBD images recorded with  an Intel RealSense camera. The tracking algorithm is implemented in GLSL and runs on the GPU in real time.
   iframe(src="https://www.youtube.com/embed/HjnljAr9OtA" frameborder="0" allowfullscreen)
@@ -13,7 +14,7 @@ block content
     a(href="http://www.icg.tugraz.at/Members/author/graber" target="_blank") Gottfried Graber
   iframe(src="https://www.youtube.com/embed/scqEYt9XjCg" frameborder="0" allowfullscreen)
   h2 Shape Optimization
-  img.img-responsive(src='public/imgs/shape.gif')
+  img.img-responsive(src='static/imgs/shape.gif')
   h2 YAS
   p YAS is a software for the alignment of RGBD images recorded from a discrete set of vantage points and their integration into a common polygonal mesh model.
   iframe(src="https://www.youtube.com/embed/zxi6pUml2Zs" frameborder="0" allowfullscreen)
@@ -21,9 +22,9 @@ block content
   p NURBS-based boundary element methods for the construction of conformal maps between two planar simply connected domains.
   .row
     .col-xs-6.col-sm-6
-      img.img-responsive(src='public/imgs/fw_star.png')
+      img.img-responsive(src='static/imgs/fw_star.png')
     .col-xs-6.col-sm-6
-      img.img-responsive(src='public/imgs/fw_disk.png')
+      img.img-responsive(src='static/imgs/fw_disk.png')
   h2 Real-Time Structure from Motion
   iframe(src="https://www.youtube.com/embed/_mtR9VqODPA" frameborder="0" allowfullscreen)
   iframe(src="https://www.youtube.com/embed/OjyeeSIwlZk" frameborder="0" allowfullscreen)
